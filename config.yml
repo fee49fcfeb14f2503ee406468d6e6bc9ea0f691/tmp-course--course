@@ -1,0 +1,17 @@
+title: tmp-course-
+description: >-
+  tmp'"--(course)-tmp'"--(course)-tmp'"--(course)-tmp'"--(course)-tmp'"--(course)-tmp'"--(course)-tmp'"--(course)-tmp'"--(course)-tmp'"--(course)-tmp'"--(course)-tmp'"--(course)-tmp'"--(course)-tmp'"--(course)-tmp'"--(course)-tmp'"--(course)-tmp'"--(course)
+template:
+  repo: tmp-course--template
+  name: tmp-course-
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
